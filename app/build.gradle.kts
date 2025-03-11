@@ -93,6 +93,7 @@ dependencies {
     implementation("androidx.room:room-runtime:$room_version")
     annotationProcessor("androidx.room:room-compiler:$room_version")
     ksp(libs.androidx.room.compiler)
-    implementation("androidx.core:core-splashscreen:1.0.0")
+    implementation("androidx.core:core-splashscreen:1.0.1")
     implementation("com.google.accompanist:accompanist-swiperefresh:0.27.0")
+    implementation("com.jakewharton.timber:timber:5.0.1")
 }
