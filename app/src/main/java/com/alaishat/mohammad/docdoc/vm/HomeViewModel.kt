@@ -20,9 +20,9 @@ import javax.inject.Inject
 
 @HiltViewModel
 class HomeViewModel @Inject constructor(
-    private val getUserTokenAndNameUseCase: GetUserTokenAndNameUseCase,
-    private val setFirstVisitUseCase: SetFirstVisitUseCase,
-    private val apiService: APIService,
+    private val getUserTokenAndNameUseCase: GetUserTokenAndNameUseCase,// Wow, I am using UseCases 🔥
+    private val setFirstVisitUseCase: SetFirstVisitUseCase, // Wow, I am using UseCases 🔥
+    private val apiService: APIService, // WTF 😱😱😱😱😱😱😱😱
 ) : ViewModel() {
 
     private val _userTokenAndName: MutableStateFlow<Pair<String?, String?>> = MutableStateFlow(null to null)

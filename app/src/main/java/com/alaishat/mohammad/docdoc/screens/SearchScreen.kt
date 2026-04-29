@@ -109,9 +109,9 @@ fun SearchScreen(
 
     BottomSheetScaffold(
         scaffoldState = scaffoldState,
-        sheetPeekHeight = 0.dp,
-        containerColor = MaterialTheme.colorScheme.background,
-        sheetContainerColor = MaterialTheme.colorScheme.background,
+//        sheetPeekHeight = 0.dp,
+//        containerColor = MaterialTheme.colorScheme.background,
+//        sheetContainerColor = MaterialTheme.colorScheme.background,
         sheetContent = {
             Scaffold(
                 modifier = Modifier.padding(24.dp),
@@ -302,7 +302,6 @@ fun SearchScreen(
                             )
                         }
                         items(allSpecs, key = { spec -> spec.id }) { spec ->
-
                             FilterChip(selected = selectedIds.contains(spec.id), onClick = {
                                 if (selectedIds.contains(spec.id)) selectedIds.remove(spec.id)
                                 else selectedIds.add(spec.id)

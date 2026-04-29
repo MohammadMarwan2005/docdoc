@@ -66,14 +66,14 @@ const val TAKEN_PHONE = "The phone"
 const val ROUTE_URL = "https://vcare.integration25.com/api"
 const val REGISTER_END_POINT = "/auth/register"
 const val LOGIN_END_POINT = "/auth/login"
-const val ALL_SPECIALIZATIONS_END_POINT = "/specialization/index"
+const val ALL_SPECIALIZATIONS_END_POINT = "/specialization/index" // Done: AllSpecializationsScreen
 const val ALL_DOCTORS_END_POINT = "/doctor/index"
-const val FILTERED_DOCTORS_BY_SPEC_END_POINT = "/doctor/doctor-filter?specialization="
+const val FILTERED_DOCTORS_BY_SPEC_END_POINT = "/doctor/doctor-filter?specialization=" // Done: AllSpecializationsScreen
 const val FILTERED_DOCTORS_BY_CITY_END_POINT = "/doctor/doctor-filter?city="
-const val DOCTOR_DETAILS_END_POINT = "/doctor/show/"
-const val BOOK_APPOINTMENT_END_POINT = "/appointment/store"
+const val DOCTOR_DETAILS_END_POINT = "/doctor/show/" // Done: DoctorDetailsScreen
+const val BOOK_APPOINTMENT_END_POINT = "/appointment/store" // Done: BookAppointmentScreen
 const val ALL_APPOINTMENT_END_POINT = "/appointment/index"
-const val SEARCH_END_POINT = "/doctor/doctor-search?name="
+const val SEARCH_END_POINT = "/doctor/doctor-search?name=" // todo: search screen
 const val USER_PROFILE_END_POINT = "/user/profile"
 const val HOME_END_POINT = "/home/index"
 
@@ -293,7 +293,7 @@ object NetworkModule {
 
             override suspend fun getUserProfile(token: String): UserProfileResponse {
 
-                val response = client.get(urlString = "$ROUTE_URL$USER_PROFILE_END_POINT") {
+                val response = client.get(urlString = "$ROUTE_URL$USER_PROFILE_END_POINT")  {
                     contentType(ContentType.Application.Json)
                     buildHeaders {
                         headers {
