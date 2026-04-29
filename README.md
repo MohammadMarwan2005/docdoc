@@ -1,3 +1,9 @@
+> ![maintenance](https://img.shields.io/badge/status-archived-red)
+> ## ⚠️ **Cauthion:** This is an archived version of Docdoc  
+> This project was originally built 7 months ago and no longer reflects my current skills.  
+> I’ve since completely rebuilt it from scratch with better architecture, cleaner code, and improved practices.  
+> 👉 **Check out the new version here:** [MohammadMarwan2005/clean.docdoc](https://github.com/MohammadMarwan2005/clean.docdoc)
+
 # 🩺 Docdoc
 **Docdoc** is a practice project designed to simulate real-life healthcare apps, helping me enhance my skills in mobile development. It's a clean architecture app, without any overengineering!
 
